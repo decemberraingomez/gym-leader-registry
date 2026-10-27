@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "server": "nodemon backend/server.js",
+    "seed": "node backend/seed.js"
   },
   "private": true,
   "packageManager": "npm@12.0.2",
