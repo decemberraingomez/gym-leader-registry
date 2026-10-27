@@ -14,6 +14,6 @@ const gymLeaderSchema = new mongoose.Schema({
     validate: { validator: Number.isInteger, message: 'aceLevel must be a whole number' },
   },
   motto: { type: String, maxlength: 150 },
-});
+}, { collection: 'leaders' }); // keep using the existing 'leaders' collection so old entries still show
 
 module.exports = mongoose.model('GymLeader', gymLeaderSchema);
